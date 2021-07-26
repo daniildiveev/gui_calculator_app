@@ -1,1 +1,1 @@
-# gui_calculator_app
+# A simple GUI calculator on pyhton
