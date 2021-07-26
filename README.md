@@ -54,7 +54,6 @@ def clear_field():
  Now that's pretty much it, all what's left is to add button.
  
  ```Python
- #adding buttons
 btn_1 = tk.Button(root, text="1", command=lambda:add_to_expr("1"), width=5, font=("Arial",24))
 btn_1.grid(row=2, column=0)
 btn_2 = tk.Button(root, text="2", command=lambda:add_to_expr("2"), width=5, font=("Arial",24))
@@ -85,12 +84,10 @@ btn_div = tk.Button(root, text="/", command=lambda:add_to_expr("/"), width=5, fo
 btn_div.grid(row=5, column=3)
 btn_bracket_1 = tk.Button(root, text="(", command=lambda:add_to_expr("("), width=5, font=("Arial",24))
 btn_bracket_1.grid(row=5, column=0)
-btn_bracket_1 = tk.Button(root, text=")", command=lambda:add_to_expr(")"), width=5, font=("Arial",24))
-btn_bracket_1.grid(row=5, column=2)
-btn_clear = tk.Button(root, text="(", command=lambda:add_to_expr("("), width=5, font=("Arial",24))
-btn_clear.grid(row=5, column=0)
-btn_equals = tk.Button(root, text="C", command=clear_field(), width=5, font=("Arial",24))
-btn_equals.grid(row=6, column=0,)
+btn_bracket_2 = tk.Button(root, text=")", command=lambda:add_to_expr(")"), width=5, font=("Arial",24))
+btn_bracket_2.grid(row=5, column=2)
+btn_clear = tk.Button(root, text="C", command=lambda:clear_field(), width=5, font=("Arial",24))
+btn_clear.grid(row=6, column=0,)
 btn_point = tk.Button(root, text=".", command=lambda:add_to_expr("."), width=5, font=("Arial",24))
 btn_point.grid(row=6, column=1)
 btn_equals = tk.Button(root, text="=", command=lambda:eval_expr(), width=10, font=("Arial",24))
