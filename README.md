@@ -107,9 +107,9 @@ That is all for calculator logic, now let's create exe file.
 
 To create exe file, we will need `pyinstaller` library, but not a regular one.
 
-Open command line and run `!pip install https://github.com/pyinstaller/pyinstaller/archive/develop.tar.gz`, this will install the right vesrion of `pyinstaller`.
+Open command line and run `pip install https://github.com/pyinstaller/pyinstaller/archive/develop.tar.gz`, this will install the right vesrion of `pyinstaller`.
 
-After that, go to directory (in command line), where your .py file is and run `!pip install https://github.com/pyinstaller/pyinstaller/archive/develop.tar.gz` 
+After that, go to directory (in command line), where your .py file is and run `pyinstaller --onefile -w calculator.py` 
 
 Nextly, go to  `dist` directory and run `calculator.exe`.
 
