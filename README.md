@@ -1,1 +1,1 @@
-# A simple GUI calculator on pyhton
+# A simple GUI calculator on python
